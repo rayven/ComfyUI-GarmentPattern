@@ -1,0 +1,17 @@
+[project]
+name = "comfyui-garmentpattern"
+description = "图/文生成服装规格 JSON 并转换为 Style3D Atelier 板片/缝纫线；内置 AIpparel 官方推理链"
+version = "1.0.0"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+# 核心节点依赖由 ComfyUI 自带 torch/numpy/PIL 提供。
+# AIpparel 的推理依赖由插件内的“准备 AIpparel 云端环境”节点在隔离环境安装，
+# 避免污染 ComfyUI/RunningHub 全局 transformers。
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/rayven/ComfyUI-GarmentPattern"
+
+[tool.comfy]
+PublisherId = "rayven"
+DisplayName = "GarmentPattern (AIpparel)"

@@ -1,0 +1,7 @@
+output/
+.hf_cache/
+.venv_aipparel/
+__pycache__/
+*.pyc
+*.log
+test_spec_convert.py
