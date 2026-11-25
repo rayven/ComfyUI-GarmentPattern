@@ -1,0 +1,3 @@
+# 核心转换与节点：零第三方依赖（仅 Python 标准库 + ComfyUI 自带的 torch/numpy/PIL）
+# http 后端：仅用 urllib；云端服务：仅用 http.server
+# 真实推理（仅云 GPU 端需要）：ChatGarment 环境见 README，Python 3.10 + torch + deepspeed + flash-attn

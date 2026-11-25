@@ -1,0 +1,10 @@
+# 只装在 .venv_aipparel 隔离环境里，绝不 pip 到 RunningHub 的全局 ComfyUI 环境
+# 版本基线取自 AIpparel-Code 官方 requirements.txt；带 >= 的项是为了兼容新版 Python
+# （本机 ComfyUI 是 Python 3.13，sentencepiece==0.1.99 / opencv==4.10 wheel 不可用，会退回源码编译）
+transformers==4.31.0
+huggingface_hub==0.23.4
+sentencepiece>=0.1.99
+opencv-python-headless>=4.10.0.84
+scipy>=1.15.2
+svgpathtools>=1.6.1
+safetensors>=0.4.0
